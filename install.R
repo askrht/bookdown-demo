@@ -1,0 +1,6 @@
+install.packages(c("knitr", "rmarkdown"))
+install.packages("collapsibleTree")
+install.packages("flexdashboard")
+install.packages("htmltools")
+install.packages("bookdown")
+devtools::install_github("rich-iannone/DiagrammeR")

@@ -1,0 +1,39 @@
+# Introduction
+
+I recommend that you read this book in the sequence in which it is presented but you may also jump to the chapter which is of interest to you.
+
+## Setup <i class="fa fa-cog"></i>
+
+Start by installing the RStudio addin for bookdown and install the required packages in `install.R` script.
+
+<div style="float:left;position: relative;">
+```{r eval=TRUE, include=TRUE, echo=FALSE, results = "asis", message=FALSE, warning=FALSE, fig.height=3, fig.width=4}
+library(flexdashboard)
+library(DiagrammeR)
+library(htmltools)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+grViz("
+digraph setup {
+  graph [bgcolor = '#1C1F2B00',
+         overlap = true,
+         center = true,
+         fontname = Helvetica,
+         rankdir = TB]
+  node [fontname = Helvetica,
+        fontsize = 24,
+        fillcolor = '#85859B',
+        style = filled,
+        fontcolor = '#FBFBFB',
+        penwidth = 1.5,
+        color = '#CCCCFF']
+  edge [color = '#ff99ff',
+        penwidth = 1]
+  node [shape = box]
+  A[label = 'install bookdown addin']; B[label = 'create bookdown project']; C[label = 'write the book']
+  D[label = 'render the book']
+  A->B; B->C; C->D
+}")
+```
+</div>
+This figure gives a high level view of the steps to setup a project using bookdown. When you are ready to render the book, execute `bookdown::render_book("index.Rmd", "bookdown::gitbook")`.
+<div style="clear: both;"></div>

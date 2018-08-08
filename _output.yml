@@ -1,0 +1,27 @@
+bookdown::gitbook:
+  split_by: none
+  self_contained: TRUE
+  css: style.css
+  config:
+    fontsettings:
+      family: sans
+      theme: night
+    sharing: null
+    search: no
+    toc:
+      before: |
+        <li><a href="./">Handbook</a></li>
+      after:
+        <li><a href="./">Replace with your URL</a></li>
+bookdown::html_book:
+  split_by: none
+  self_contained: TRUE
+  css: style.css
+  config:
+    sharing: null
+    search: no
+    toc:
+      before: |
+        <li><a href="./">Handbook</a></li>
+      after: |
+        <li><a href="./" target="blank">Replace with your URL</a></li>

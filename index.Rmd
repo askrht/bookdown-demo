@@ -1,0 +1,18 @@
+---
+title: "Minimal Bookdown"
+author: "Lost Vampire"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of writing a book using bookdown."
+---
+
+# Objective
+
+Most of what I know about bookdown comes from what I learnt from [Yuhui](https://yihui.name/en/). The objective of this book is to make it easier for an R user to get started on bookdown. It assumes that you have a basic understanding of Unix tools like git, R, RStudio, HTML and CSS.
+
+If you have any questions, I suggest that you read the [original book](https://bookdown.org/yihui/bookdown/) before googling.
